@@ -1,0 +1,14 @@
+FROM centos:latest as Base
+
+WORKDIR /installation-files
+
+COPY . .
+
+WORKDIR /installation-files/centos/centos-8.x/centos-8.3-hpc
+
+RUN yum install -y wget
+
+RUN ./install.sh
+
+
+
