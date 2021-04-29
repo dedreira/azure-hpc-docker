@@ -10,6 +10,7 @@ tar zxvf ${TARBALL}
 
 #KERNEL=( $(rpm -q kernel | sed 's/kernel\-//g') )
 #KERNEL=${KERNEL[-1]}
-#yum install -y kernel-devel-${KERNEL}
-#./${MOFED_FOLDER}/mlnxofedinstall --kernel $KERNEL --kernel-sources /usr/src/kernels/${KERNEL} --add-kernel-support --skip-repo
-./${MOFED_FOLDER}/mlnxofedinstall --skip-repo
+KERNEL=4.18.0-240.22.1.el8_3.x86_64
+yum install -y kernel-devel-${KERNEL}
+./${MOFED_FOLDER}/mlnxofedinstall --kernel $KERNEL --kernel-sources /usr/src/kernels/${KERNEL} --add-kernel-support --skip-repo
+#./${MOFED_FOLDER}/mlnxofedinstall --add-kernel-support --skip-repo
