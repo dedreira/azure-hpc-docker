@@ -12,6 +12,6 @@ tar zxvf ${TARBALL}
 #KERNEL=${KERNEL[-1]}
 KERNEL=4.18.0-240.22.1.el8_3.x86_64
 yum install -y kernel-devel-${KERNEL}
-yum install lsof pciutils
+yum install -y lsof pciutils
 ./${MOFED_FOLDER}/mlnxofedinstall --kernel $KERNEL --kernel-sources /usr/src/kernels/${KERNEL} --add-kernel-support --skip-repo
 #./${MOFED_FOLDER}/mlnxofedinstall --add-kernel-support --skip-repo
