@@ -21,5 +21,3 @@ ENV COMMON_DIR=../../../common
 ENV EST_DIR=../../../tests
 
 RUN ./install_gcc.sh
-
-
