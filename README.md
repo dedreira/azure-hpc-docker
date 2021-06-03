@@ -15,3 +15,7 @@ docker build -t centos-hpc-mellanox -f Dockerfile.mellanox .
 ````sh
 docker build -t centos-hpc-mpi -f Dockerfile.mpi .
 ````
+## Install AMD libraries
+````sh
+docker build -t centos-hpc-amd -f Dockerfile.amd .
+````

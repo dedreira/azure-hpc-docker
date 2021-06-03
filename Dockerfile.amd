@@ -1,0 +1,9 @@
+FROM centos-hpc-mpi:latest
+
+WORKDIR /installation-files
+
+COPY . .
+
+WORKDIR /installation-files/centos/centos-8.x/centos-8.3-hpc
+
+RUN ./install_amd_libs.sh
