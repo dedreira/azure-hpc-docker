@@ -19,3 +19,8 @@ docker build -t centos-hpc-mpi -f Dockerfile.mpi .
 ````sh
 docker build -t centos-hpc-amd -f Dockerfile.amd .
 ````
+
+## Install Intel Libs
+````sh
+docker build -t centos-hpc-intel -f Dockerfile.intel .
+````
