@@ -4,10 +4,14 @@ This repo tries to create a docker image ready to run HPC - MPI workloads in Azu
 # Generation Order for Dockerfiles
 
 ##  Install GCC and prerequisites
-```` sh
+````sh
 docker build -t centos-hpc-compiler -f Dockerfile .
 ````
 ## Install Mellanox drivers
-```` sh
+````sh
 docker build -t centos-hpc-mellanox -f Dockerfile.mellanox .
+````
+## Install MPIs libraries
+````sh
+docker build -t centos-hpc-mpi -f Dockerfile.mpi .
 ````
